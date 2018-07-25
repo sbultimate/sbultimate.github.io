@@ -1,1 +1,404 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="Ultimate, Ultimate Frisbee, Stony Brook, Stony Brooky Ultimate Frisbee, SBU">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="myscripts.js"></script>
+
+<link rel="stylesheet" href="stylesheet.css">
+<link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+<title>Stony Brook Ultimate Frisbee</title>
+</head>
+<body onload = "showSlides()">
+
+<div class="header">
+<div class="row">
+	<div class="col-sm-2">  
+	</div>
+	<div class="col-sm-3" style="background-color:#990000">
+		<a href="index.html">
+			<img src="images/header.jpg"  alt="Stony Brook Ultimate Frisbee" title="Stony Brook Ultimate" width="100%"></img>
+		</a>
+	</div>
+	<div class="col-sm-2">  
+	</div>
+	<div class="col-sm-3" id="header">
+		<h2>Follow Us</h2>
+		<center>
+			<a href="https://www.facebook.com/StonyBrookUltimateFrisbee/" target="blank"><img src="icon/facebook-icon.png" class="img-rounded topbar"></img></a>
+			<a href="https://twitter.com/SBUultimate" target="blank"><img src="icon/twitter-icon.png" class="img-rounded topbar"></img></a>
+			<a href="https://www.instagram.com/stonybrookultimate/" target="blank"><img src="icon/instagram-icon.png" class="topbar"></img></a>
+		</center>
+	</div>
+	<div class="col-sm-2">  
+	</div>
+</div>
+</div>
+<div class="row">
+	<div class="col-sm-12">
+		<div class="nav">
+			<ul>
+				<li class="home" onmouseup="setPage(0)"><a>Home</a></li>
+				<li class="about" onmouseup="setPage(1)"><a>About</a></li>
+				<li class="schedule" onmouseup="setPage(2)"><a>Schedule</a></li>
+				<li class="media" onmouseup="setPage(3)"><a>Media</a></li>
+				<li class="contact" onmouseup="setPage(4)"><a>Contact</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!--////////////////////////////////////////Home///////////////////////////////////////////////////////////////////////-->
+<div class="myPages">
+	<div class = "container">
+		<br>
+		<div class="row" id="content">
+			<div class="col-sm-1">
+			</div>
+			<div class="col-sm-2">
+				<img src="images/panic_logo.jpg" class="logo" alt="Panic Logo" title="Panic Ultimate" width="100%"></img>
+			</div>
+			<div class="col-sm-1">
+			</div>
+			<div class="col-sm-4">
+			<!-- Slideshow container -->
+			<div class="slideshow-container">
+		
+				<!-- Full-width images with number and caption text -->
+				<div class="mySlides">
+					<div class="numbertext"></div>
+					<img src="images/slider/img1.jpg" style="width:100%">
+					<div class="text"></div>
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext"></div>
+					<img src="images/slider/img2.jpg" style="width:100%">
+					<div class="text"></div>
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext"></div>
+					<img src="images/slider/img3.jpg" style="width:100%">
+					<div class="text"></div>
+				</div>
+  
+				<div class="mySlides">
+					<div class="numbertext"></div>
+					<img src="images/slider/img4.jpg" style="width:100%">
+					<div class="text"></div>
+				</div>
+			</div>
+			</div>
+			<div class="col-sm-1">
+			</div>
+			<div class="col-sm-2">
+			<img src="images/panic_logo.jpg" class="logo" alt="Panic Logo" title="Panic Ultimate" width="100%"></img>
+			</div>
+			<div class="col-sm-1">
+			</div>
+		</div>
+		<br>
+		<br>
+		<div class="row" >
+			<div class="col-sm-4" id = "contentLeft">
+				<h1 class="well">Who We Are</h1>
+				<p>
+					We are Stony Brook University's 
+					official Ultimate Frisbee team. We have a men and women's 
+					team, and for several tournaments we combine to compete as a co-ed team. 
+					Both teams compete in USA Ultimate's Metro East Division 1 section for a ​national 
+					ranking. We mostly travel throughout the tri-state area for our weekend tournaments, 
+					and attend 8-10 events per school year.
+				</p>
+			</div>
+			
+			<div class="col-sm-4" id = "contentMiddle">
+				<h1 class="well">Who Can Join</h1>
+				<p>
+					Any SBU student is welcome to join, both undergrad and graduate students!
+					No prior experience is required! Our team is walk-on, and anyone who consistently 
+					shows up to practice will get at least one chance to go to a tournament or other
+                        Stony Brook Ultimate event!
+				</p>
+				<p>
+					All you have to do is visit our <a href="contact.html">Contact</a> page, and get in
+					touch with one of our team leaders, or even just show up to practice! Practice times 
+					are located on the <a href="schedule.html">Schedule</a> page.
+				</p>
+			</div>
+			<div class="col-sm-4" id = "contentRight">
+				<h1 class="well">News</h1>
+				<a class="twitter-timeline" data-height = "300" href="https://twitter.com/SBUultimate?ref_src=twsrc%5Etfw">Tweets by SBUultimate</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-sm-4" id = "contentLeft">
+				<h1 class="well">Highlights</h1>
+				<center>
+					<iframe width="90%" height="300" src="https://www.youtube.com/embed/eMxB9_N5ug8?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				</center>
+			</div>
+			<div class="col-sm-4" id = "contentMiddle">
+				<h1 class="well">News</h1>
+		
+			</div>
+			<div class="col-sm-4" id = "contentRight">
+				<a href="contact.html">
+					<h1 class="well">Contact Us</h1>
+				</a>
+				<h2 class="redText">Email</h2>
+				<p>
+					<a href="mailto:panicultimate@gmail.com" target="top" class="email">panicultimate@gmail.com</a>
+				</p>
+			
+				<h2 class="redText">Follow us on social media</h2>
+				<center>
+					<a href="https://www.facebook.com/StonyBrookUltimateFrisbee/" target="blank"><img src="icon/facebook-icon.png" class="img-rounded topbar"></img></a>
+					<a href="https://twitter.com/SBUultimate" target="blank"><img src="icon/twitter-icon.png" class="img-rounded topbar"></img></a>
+					<a href="https://www.instagram.com/stonybrookultimate/" target="blank"><img src="icon/instagram-icon.png" class="topbar"></img></a>
+				</center>
+        		<h2 class="redText">Ask to join the <a href="https://www.facebook.com/groups/panicultimate/" target="blank">Facebook group</a></h2>
+		
+		</div>
+	
+		</div>
+	</div>
+</div>
+<!--////////////////////////////////////////About//////////////////////////////////////////////////////////////////////-->
+<div class="myPages" style="display: none;">
+	<div class="container">
+		<br>
+		<div class="row">
+		<div class="col-sm-12">
+        <h1>About Stony Brook Ultimate</h1>
+		</div>
+		</div>
+		<br>
+		<div class="row">
+		<div class="col-sm-2">
+		</div>
+		<div class="col-sm-8">
+		<h3>Who Are We?</h3>
+		<p>
+			In addition to being the most fun club on campus, we are a collection of people 
+			from all athletic or non-athletic backgrounds who love playing ultimate frisbee! 
+			Many of us joined the club having never even played before, so absolutely everyone 
+			is welcome at practice! We have both a men’s A team, B team and a women’s team, 
+			and occasionally we will combine the two and play co-ed. We attend a few tournaments 
+			each semester and hold practice 3 times a week, but you will definitely catch us 
+			tossing at on the staller steps daily(weather permitting).
+		</p>
+		</div>
+		<div class="col-sm-2">
+		</div>
+		</div>
+
+		<div class="row">
+		<div class="col-sm-2">
+		</div>
+		<div class="col-sm-8">
+		<h3>Who Can Join</h3>
+		<p>
+			Absolutely any stony brook student, undergraduate or graduate(or even faculty) is more 
+			than welcome here! We require absolutely no experience to join and will teach you 
+			everything you need to know!
+		</p>
+		<p>
+			If you do have experience playing ultimate, we do have a FILTHY A team with experienced 
+			coaches and player who would love to help bring your game to the next level.
+		</p>
+		</div>
+		<div class="col-sm-2">
+		</div>
+		</div>
+
+		<div class="row">
+		<div class="col-sm-2">
+		</div>
+		<div class="col-sm-8">
+		<h3>About Panic</h3>
+		<p>
+			Panic is the name of our mens A and B teams, as well as our co-ed team. All three teams 
+			compete at both local and away tournaments throughout the fall and the spring semesters. 
+			Our Men’s A team also competes at USA Ultimate sanctioned tournaments. Our Mens A team's 
+			coach is Matt LeMar of the AUDL’s New York Empire.
+		</p>
+		</div>
+		<div class="col-sm-2">
+		</div>
+		</div>
+
+		<div class="row">
+		<div class="col-sm-2">
+		</div>
+		<div class="col-sm-8">
+		<h3>About Smash</h3>
+		<p>
+			Smash is the name of our BADASS womens team. We are full of strong women who want to see the 
+			sport of ultimate grow for females! We go to local and away tournaments throughout both the 
+			fall and spring semesters. We also have our very own coach, Ken Cabot, as well as a wonderful 
+			lineup of 3 women captains, Ariana, Elana and Claire.
+		</p>
+		</div>
+		<div class="col-sm-2">
+		</div>
+		</div>
+
+		<div class="row">
+		<div class="col-sm-2">
+		</div>
+		<div class="col-sm-8">
+		<h3>Practices</h3>
+		<p>
+			Practice times are located on our schedule page. We hold practices 3 times a week in the evening 
+			during fall semester at south P fields, which are a quick walk or an even quicker bus ride on the 
+			express loop away. During the spring semester due to frigid temperatures we hold practice indoors 
+			in the MAC courts, which are on the basement level of the rect center(big red building across 
+			from chemistry). These practice times are throughout the day depending on when we can reserve 
+			the space, stay tuned!
+		</p>
+		</div>
+		<div class="col-sm-2">
+		</div>
+		</div>
+
+		<div class="row">
+		<div class="col-sm-2">
+		</div>
+		<div class="col-sm-8">
+		<h3>Tournaments</h3>
+		<p>
+			We usually go to about 4 tournaments per semester, mostly in the tri-state/New England area. During 
+			the fall we play at both Men's/Women's and mixed tournaments, and during the Spring we primarily 
+			play Men's/Women's. During spring break we head down to Myrtle beach with two mixed teams for the 
+			week to compete at High Tide!
+		</p>
+		</div>
+		<div class="col-sm-2">
+		</div>
+		</div>
+	</div>
+</div>
+<!--////////////////////////////////////////Schedule///////////////////////////////////////////////////////////////////-->
+<div class="myPages" style="display: none;">
+	<div class="container">
+		<br>
+		<div class="row">
+			<div class="col-sm-3">
+				<h1>Practice Times</h1>
+				<h2 class="redText">Fall 2018</h2>
+						<ul>
+							<!-- <li>Monday: 7pm-9pm South P Field B</li>
+							<br>
+							<li>Thursday: 7pm-9pm South P Field B</li>
+							<br>
+							<li>Friday: 6pm-8pm South P Field C</li> -->
+							<li>TBD</li>
+						</ul>
+				<br>
+			</div>
+			<div class="col-sm-3">
+				<h1>Tournaments</h1>
+				<h2 class="redText">Fall 2018</h2>
+						<ul>
+							<!-- <li style="color:#990000">Men</li>
+								<li>Long Island Invitational 9/30-10/1</li>
+								<li>Fall Brawl 11/11-11/12</li>
+							<br>
+							<li style="color:#990000">Women</li>
+								<li>Space Jam 9/23-9/24</li>
+								<li>Fall Brawl 11/11-11/12</li>
+							<br>
+							<li style="color:#990000">Mixed</li>
+								<li>Huckin' Catalina Wine Flicker 10/14-10/15</li>
+								<li>Huck For Red October 10/21-10/22</li> -->
+							<li>TBD</li>
+						</ul>
+				<br>
+			</div>
+			<div class="col-sm-6">
+				<iframe src="https://calendar.google.com/calendar/embed?src=stonybrook.edu_10p78ps9uji9v7kertf4fddqp4%40group.calendar.google.com&ctz=America/New_York" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+			</div>
+		</div>
+	</div>
+</div>
+<!--////////////////////////////////////////Media//////////////////////////////////////////////////////////////////////-->
+<div class="myPages" style="display: none;">
+	<div class="container">
+		<br>
+		<div class="row">
+		<div class="col-sm-6">
+		<h1>Photos</h1>
+		</div>
+		<div class="col-sm-6">
+		<h1>Videos</h1>
+		</div>
+		</div>
+		<br>
+	</div>
+</div>
+<!--////////////////////////////////////////Contact////////////////////////////////////////////////////////////////////-->
+<div class="myPages" style="display: none;">
+	<div class="container">
+		<br>
+		<center><h1>JOIN US! NEW PLAYERS ALWAYS WELCOME!</h1></center>
+		<br>
+		<div class="row">
+			<div class="col-sm-3">
+			</div>
+			<div class="col-sm-6">
+				<h1 class="well">Contact Info</h1>
+			</div>
+				<div class="col-sm-3">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-3">
+			</div>
+			<div class="col-sm-6">
+				<h2 class="redText">Email</h2>
+				<p><a href="mailto:panicultimate@gmail.com" target="top" class="email">panicultimate@gmail.com</a></p>
+				<h2 class="redText">Women's Captains</h2>
+				<ul>
+					<li>Ariana Ambrosio</li>
+					<li>Elana Howe</li>
+					<li>Claire Surkis</li>
+				</ul>
+				<h2 class="redText">Men's Captains</h2>
+				<ul>
+					<li>Will Burks</li>
+					<li>Andreas Lietzau</li>
+					<li>Cody Brady</li>
+				</ul>
+				<h2 class="redText">E-Board</h2>
+				<ul>
+					<li>President: Brett Keeler</li>
+					<li>Vice President: Ariana Ambrosio</li>
+					<li>Treasurer: Jake Friedlander</li>
+					<li>Secretary: Claire Surkis</li>
+				</ul>
+				<h2 class="redText">Follow us on social media</h2>
+				<center>
+					<a href="https://www.facebook.com/StonyBrookUltimateFrisbee/" target="blank"><img src="icon/facebook-icon.png" class="img-rounded topbar"></img></a>
+					<a href="https://twitter.com/SBUultimate" target="blank"><img src="icon/twitter-icon.png" class="img-rounded topbar"></img></a>
+					<a href="https://www.instagram.com/stonybrookultimate/" target="blank"><img src="icon/instagram-icon.png" class="topbar"></img></a>
+				</center>
+				<h2 class="redText">Ask to join the <a href="https://www.facebook.com/groups/panicultimate/" target="blank">Facebook group</a></h2>
+			</div>
+			<div class="col-sm-3">
+			</div>
+		</div>
+	</div>
+</div>
+<!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<br>
+<br>
+</body>
+</html>
