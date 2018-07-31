@@ -7,8 +7,8 @@ html, body {
 }
 
 body {
-    background-color: #000000;
-	color: #ffffff;
+    background-color: #ffffff;
+	color: #000000;
 }
 
 .container {
@@ -17,8 +17,9 @@ body {
 
 h1 {
     margin: 0;
-    color: white;
+    color: #d12f2f;
     text-align: center;
+    font-weight: bold;
 }
 
 h2 {
@@ -28,8 +29,7 @@ h2 {
 }
 
 h3 {
-	color: white;
-	text-decoration: underline;
+	color: #d12f2f;
 	font-weight: bold;
 }
 
@@ -75,7 +75,7 @@ ul {
 
 .nav ul {
   list-style: none;
-  background-color: #990000;
+  background-color: #d12f2f;
   text-align: center;
   padding: 0;
   margin: 0;
@@ -137,7 +137,7 @@ td {
 }
 
 .header{
-	background: #990000;
+	background: #d12f2f;
 }
 
 .contact{
@@ -162,9 +162,64 @@ td {
 	color:#990000;
 }
 
+.grayBox{
+  /* background-color: gray; */
+  border-style: double;
+  border-width: 5px;
+  border-color: rgb(143, 140, 140);
+}
+
 /* .logo {
 
 } */
+
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.nav a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
 
 /************Slideshow styling************/
 

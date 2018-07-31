@@ -50,6 +50,24 @@ function showSlides() {
     setTimeout(showSlides, 3000); // Change image every 2 seconds
 };
 
+function setDropDown() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onmouseover = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
 // function facebook(d, s, id) {
 //   var js, fjs = d.getElementsByTagName(s)[0];
 //   if (d.getElementById(id)) return;
