@@ -1,4 +1,6 @@
 var slideIndex = 0;
+var slideIndex2 = 0;
+var slideIndex3 = 0;
 // showSlides();
 /*
 // Next/previous controls
@@ -50,6 +52,30 @@ function showSlides() {
     setTimeout(showSlides, 3000); // Change image every 2 seconds
 };
 
+function showSlides2() {
+  var i;
+  var slides2 = document.getElementsByClassName("mySlides2");
+  for (i = 0; i < slides2.length; i++) {
+      slides2[i].style.display = "none"; 
+  }
+  slideIndex2++;
+  if (slideIndex2 > slides2.length) {slideIndex2 = 1} 
+  slides2[slideIndex2-1].style.display = "block"; 
+  setTimeout(showSlides2, 3000); // Change image every 2 seconds
+};
+
+function showSlides3() {
+  var i;
+  var slides3 = document.getElementsByClassName("mySlides3");
+  for (i = 0; i < slides3.length; i++) {
+      slides3[i].style.display = "none"; 
+  }
+  slideIndex3++;
+  if (slideIndex3 > slides3.length) {slideIndex3 = 1} 
+  slides3[slideIndex3-1].style.display = "block"; 
+  setTimeout(showSlides3, 3000); // Change image every 2 seconds
+};
+
 function setDropDown() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
@@ -67,6 +93,10 @@ window.onmouseover = function(event) {
     }
   }
 }
+
+// showSlides();
+// showSlides2();
+// showSlides3();
 
 // function facebook(d, s, id) {
 //   var js, fjs = d.getElementsByTagName(s)[0];

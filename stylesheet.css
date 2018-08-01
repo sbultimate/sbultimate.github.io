@@ -1,13 +1,13 @@
 html, body {
 	width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; 
 }
 
 body {
-    background-color: #ffffff;
+  background-color: #ffffff;
 	color: #000000;
 }
 
@@ -16,15 +16,15 @@ body {
 }
 
 h1 {
-    margin: 0;
-    color: #d12f2f;
-    text-align: center;
-    font-weight: bold;
+  margin: 0;
+  color: #d12f2f;
+  text-align: center;
+  font-weight: bold;
 }
 
 h2 {
 	color: #ffffff;
-    text-align: center;
+  text-align: center;
 	vertical-align: top;
 }
 
@@ -34,8 +34,8 @@ h3 {
 }
 
 p {
-    font-family: verdana;
-    font-size: 1.2em;
+  font-family: verdana;
+  font-size: 1.2em;
 	text-align: center;
 	margin:0;
 }
@@ -45,8 +45,8 @@ p span{
 }
 
 li {
-    font-family: verdana;
-    font-size: 18px;
+  font-family: verdana;
+  font-size: 18px;
 }
 
 a:hover{
@@ -64,8 +64,8 @@ iframe {
 ul {
 	list-style-type: none;
 	text-align: center;
-        padding:0;
-        margin:0;
+  padding:0;
+  margin:0;
 }
 
 .banner img{
@@ -127,12 +127,12 @@ ul {
 
 table {
 	border-color: #ffffff;
-    border-spacing: 0px;
-    border-collapse: collapse;
+  border-spacing: 0px;
+  border-collapse: collapse;
 }
 
 td { 
-    padding: 0px;
+  padding: 0px;
 	vertical-align:top;
 }
 
@@ -150,7 +150,9 @@ td {
 
 .well{
 	background-color: #990000;
-	font-size: 1.8em;
+  font-size: 1.8em;
+  color: white;
+  border-color: black;
 }
 
 .topbar {
@@ -234,7 +236,7 @@ td {
 
 /* Hide the images by default */
 .mySlides {
-    display: none;
+  display: none;
 }
 
 /* Next & previous buttons */
@@ -342,39 +344,39 @@ td {
 	  font-size: 1.8em;
   }
   p {
-        font-size: 1.1em;
+    font-size: 1.1em;
     }
   
 }
 
 @media only screen and (max-width: 750px){
-    h1{
-        font-size: 1.3em;
-    }
-    h2{
-        font-size: 1.2em;
-    }
-	  h3{
-        font-size: 1.1em;
-    }
-    p{
-        font-size: 1em;
-    }
-    li{
-        font-size: 1em;
-    }
-    .topbar{
-        width: 2em;
-    }
-    .email{
-        font-size:.8em;
-    }
+  h1{
+    font-size: 1.3em;
+  }
+  h2{
+    font-size: 1.2em;
+  }
+	h3{
+    font-size: 1.1em;
+  }
+  p{
+    font-size: 1em;
+  }
+  li{
+    font-size: 1em;
+  }
+  .topbar{
+    width: 2em;
+  }
+  .email{
+    font-size:.8em;
+  }
 	.well{
 		font-size: 1.3em;
 	}
 	
 
-    .nav li {
+  .nav li {
     width: 4.5em;
     border-bottom: none;
     height: 3.3em;
