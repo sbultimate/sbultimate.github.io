@@ -41,22 +41,18 @@
 <div class="row">
 	<div class="col-sm-12">
 		<div class="nav">
-			<ul>
-				<li class="home" onmouseup="setPage(0)"><a>Home</a></li>
-				<li class="about" onmouseover="setDropDown()"><a>About</a></li>
-					<div class="dropdown">
-						
-						<div class="dropdown-content" id="myDropdown">
-							<a href="#">Link 1</a>
-							<a href="#">Link 2</a>
-							<a href="#">Link 3</a>
-						</div>
-					</div> 
-				
-				<li class="schedule" onmouseup="setPage(2)"><a>Schedule</a></li>
-				<li class="media" onmouseup="setPage(3)"><a>Media</a></li>
-				<li class="contact" onmouseup="setPage(4)"><a>Contact</a></li>
-			</ul>
+			<button class="home" onmouseup="setPage(0)"><a>Home</a></button>
+			<div class="dropdown">
+				<button onclick="myFunction()" class="dropbtn">About</button>
+				<div id="myDropdown" class="dropdown-content">
+				  <a onmouseup="setPage(1)">About Us</a>
+				  <a onmouseup="setPage(2)">History</a>
+				  <a onmouseup="setPage(3)">Link 3</a>
+				</div>
+			</div>
+			<button class="schedule" onmouseup="setPage(4)"><a>Schedule</a></button>
+			<button class="media" onmouseup="setPage(5)"><a>Media</a></button>
+			<button class="contact" onmouseup="setPage(6)"><a>Contact</a></button>
 		</div>
 	</div>
 </div>
