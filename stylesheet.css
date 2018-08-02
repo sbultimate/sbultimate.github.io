@@ -111,7 +111,7 @@ ul {
   margin: 0;
 }
 .nav button {
-  background-color: #990000;
+  background-color: #d12f2f;
   font-family: 'Oswald', sans-serif;
   color: white;
   width: 150px;
@@ -132,7 +132,7 @@ ul {
 }
  
 .nav a:hover, button:hover {
-  color: #005f5f;
+  color: #000000;
   cursor: pointer;
 }
  
