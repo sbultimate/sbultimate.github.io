@@ -16,7 +16,7 @@
 	<div class="row">
 		<div class="col-sm-2">  
 		</div>
-		<div class="col-sm-4" >
+		<div class="col-sm-4">
 			<!-- <a href="index.html">
 				<img src="images/header.jpg"  alt="Stony Brook Ultimate Frisbee" title="Stony Brook Ultimate" width="100%"></img>
 			</a> -->
@@ -39,24 +39,21 @@
 		</div>
 	</div>
 </div>
-<div class="row">
-	<div class="col-sm-12">
-		<div class="nav">
-			<button class="home" onmouseup="setPage(0)"><a>Home</a></button>
-			<div class="dropdown">
-				<button onclick="myFunction()" class="dropbtn">About</button>
-				<div id="myDropdown" class="dropdown-content">
-				  <a onmouseup="setPage(1)">About Us</a>
-				  <a onmouseup="setPage(2)">History</a>
-				  <a onmouseup="setPage(3)">How To Join</a>
-				</div>
-			</div>
-			<button class="schedule" onmouseup="setPage(4)"><a>Schedule</a></button>
-			<button class="media" onmouseup="setPage(5)"><a>Media</a></button>
-			<button class="contact" onmouseup="setPage(6)"><a>Contact</a></button>
+<div class="nav">
+	<button class="home" onmouseup="setPage(0)"><a>Home</a></button>
+	<div class="dropdown">
+		<button onclick="setDropdown()" class="dropbtn">About</button>
+		<div id="myDropdown" class="dropdown-content">
+			<a onmouseup="setPage(1)">About Us</a>
+			<a onmouseup="setPage(2)">History</a>
+			<a onmouseup="setPage(3)">How To Join</a>
 		</div>
 	</div>
+	<button class="schedule" onmouseup="setPage(4)"><a>Schedule</a></button>
+	<button class="media" onmouseup="setPage(5)"><a>Media</a></button>
+	<button class="contact" onmouseup="setPage(6)"><a>Contact</a></button>
 </div>
+
 <!--////////////////////////////////////////Home///////////////////////////////////////////////////////////////////////-->
 <div class="myPages">
 	<div class = "container">
@@ -95,38 +92,38 @@
 			</div>
 			<div class="col-sm-4" style="padding: 0px; border-style: solid; border-width: 2px; border-color: black;">
 			<!-- Slideshow container -->
-			<div class="slideshow-container">
-				<!-- Full-width images with number and caption text -->
-				<div class="mySlides2">
-					<div class="numbertext"></div>
-					<img src="images/slider2/img2.jpg" style="width:100%">
-					<div class="text"></div>
+				<div class="slideshow-container">
+					<!-- Full-width images with number and caption text -->
+					<div class="mySlides2">
+						<div class="numbertext"></div>
+						<img src="images/slider2/img2.jpg" style="width:100%">
+						<div class="text"></div>
+					</div>
+					<div class="mySlides2">
+						<div class="numbertext"></div>
+						<img src="images/slider2/img3.jpg" style="width:100%">
+						<div class="text"></div>
+					</div>
+					<div class="mySlides2">
+						<div class="numbertext"></div>
+						<img src="images/slider2/img4.jpg" style="width:100%">
+						<div class="text"></div>
+					</div>
+					<div class="mySlides2">
+						<div class="numbertext"></div>
+						<img src="images/slider2/img5.jpg" style="width:100%">
+						<div class="text"></div>
+					</div>
+					<div class="mySlides2">
+						<div class="numbertext"></div>
+						<img src="images/slider2/img1.jpg" style="width:100%">
+						<div class="text"></div>
+					</div>
 				</div>
-				<div class="mySlides2">
-					<div class="numbertext"></div>
-					<img src="images/slider2/img3.jpg" style="width:100%">
-					<div class="text"></div>
-				</div>
-				<div class="mySlides2">
-					<div class="numbertext"></div>
-					<img src="images/slider2/img4.jpg" style="width:100%">
-					<div class="text"></div>
-				</div>
-				<div class="mySlides2">
-					<div class="numbertext"></div>
-					<img src="images/slider2/img5.jpg" style="width:100%">
-					<div class="text"></div>
-				</div>
-				<div class="mySlides2">
-					<div class="numbertext"></div>
-					<img src="images/slider2/img1.jpg" style="width:100%">
-					<div class="text"></div>
-				</div>
-			</div>
 			</div>
 			<div class="col-sm-4" style="padding: 0px; border-style: solid; border-width: 2px; border-color: black;">
 				<!-- Slideshow container -->
-			<div class="slideshow-container">
+				<div class="slideshow-container">
 					<!-- Full-width images with number and caption text -->
 					<div class="mySlides3">
 						<div class="numbertext"></div>
@@ -170,7 +167,6 @@
 					and attend 8-10 events per school year.
 				</p>
 			</div>
-			
 			<div class="col-sm-4" id = "contentMiddle">
 				<h1 class="well">Who Can Join</h1>
 				<p>

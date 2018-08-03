@@ -1,33 +1,6 @@
 var slideIndex = 0;
 var slideIndex2 = 0;
 var slideIndex3 = 0;
-// showSlides();
-/*
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1} 
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none"; 
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block"; 
-  dots[slideIndex-1].className += " active";
-}*/
 
 function setPage(page) {
   var i;
@@ -76,10 +49,6 @@ function showSlides3() {
   setTimeout(showSlides3, 3000); // Change image every 2 seconds
 };
 
-function setDropDown() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
 // window.onmouseover = function(event) {
 //   if (!event.target.matches('.dropbtn')) {
 
@@ -96,9 +65,9 @@ function setDropDown() {
 
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
-function myFunction() {
+function setDropdown() {
   document.getElementById("myDropdown").classList.toggle("show");
-}
+};
 
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
@@ -113,26 +82,4 @@ if (!event.target.matches('.dropbtn')) {
     }
   }
 }
-}
-// showSlides();
-// showSlides2();
-// showSlides3();
-
-// function facebook(d, s, id) {
-//   var js, fjs = d.getElementsByTagName(s)[0];
-//   if (d.getElementById(id)) return;
-//   js = d.createElement(s); js.id = id;
-//   js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.5";
-//   fjs.parentNode.insertBefore(js, fjs);
-// };
-
-
-
-// $(document).ready(function(e) {
-//     var width = "+=" + $(document).width();
-//     $("#animate").animate({
-//     left: width
-//   }, 5000, function() {
-//     // Animation complete.
-//   });
-// });
+};
