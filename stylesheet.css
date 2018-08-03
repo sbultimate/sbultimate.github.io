@@ -202,10 +202,10 @@ td {
 }
 
 .grayBox{
-  /* background-color: gray; */
+  background-color: rgb(143, 140, 140);
   border-style: double;
   border-width: 5px;
-  border-color: rgb(143, 140, 140);
+  border-color: rgb(0, 0, 0);
 }
 
 /* .logo {
