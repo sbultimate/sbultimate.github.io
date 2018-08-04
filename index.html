@@ -14,12 +14,12 @@
 
 <div class="header">
 	<div class="row">
-		<div class="col-sm-2">  
+		<br>
+		<div class="col-sm-2">
 		</div>
 		<div class="col-sm-4">
-			<!-- <a href="index.html">
-				<img src="images/header.jpg"  alt="Stony Brook Ultimate Frisbee" title="Stony Brook Ultimate" width="100%"></img>
-			</a> -->
+			<br>
+			<br>
 			<h1 style="font-family: Oswald; color: white;">
 				STONY BROOK ULTIMATE
 			</h1>
@@ -37,21 +37,23 @@
 		</div>
 		<div class="col-sm-2">  
 		</div>
+		<br>
+		<br>
 	</div>
 </div>
 <div class="nav">
-	<button class="home" onmouseup="setPage(0)"><a>Home</a></button>
+	<button class="home" onclick="setPage(0)"><a>Home</a></button>
 	<div class="dropdown">
-		<button onclick="setDropdown()" class="dropbtn">About</button>
+		<button onmouseover="setDropdown()"  class="dropbtn">About</button>
 		<div id="myDropdown" class="dropdown-content">
-			<a onmouseup="setPage(1)">About Us</a>
-			<a onmouseup="setPage(2)">History</a>
-			<a onmouseup="setPage(3)">How To Join</a>
+			<a onclick="setPage(1)" class="droplink">About Us</a>
+			<!-- <a onclick="setPage(2)" class="droplink">History</a> -->
+			<a onclick="setPage(3)" class="droplink">How To Join</a>
 		</div>
 	</div>
-	<button class="schedule" onmouseup="setPage(4)"><a>Schedule</a></button>
-	<button class="media" onmouseup="setPage(5)"><a>Media</a></button>
-	<button class="contact" onmouseup="setPage(6)"><a>Contact</a></button>
+	<button class="schedule" onclick="setPage(4)"><a>Schedule</a></button>
+	<button class="media" onclick="setPage(5)"><a>Media</a></button>
+	<button class="contact" onclick="setPage(6)"><a>Contact</a></button>
 </div>
 <br>
 <!--////////////////////////////////////////Home///////////////////////////////////////////////////////////////////////-->
@@ -173,9 +175,9 @@
 					No prior experience is required! Our team is walk-on, and anyone who consistently 
 					shows up to practice will get at least one chance to go to a tournament or other
                     Stony Brook Ultimate event! <br/>
-					All you have to do is visit our <a onmouseup="setPage(6)">Contact</a> page, and get in
+					All you have to do is visit our <a onclick="setPage(6)">Contact</a> page, and get in
 					touch with one of our team leaders, or even just show up to practice! All information
-					about practices is located on the <a onmouseup="setPage(3)">How To Join</a> page.
+					about practices is located on the <a onclick="setPage(3)">How To Join</a> page.
 				</p>
 			</div>
 			<div class="col-md-4" id = "contentRight">
@@ -191,11 +193,13 @@
 			<div class="col-md-4" id = "contentMiddle">
 				<h1 class="well">Highlights</h1>
 				<center>
-					<iframe width="90%" height="300" src="https://www.youtube.com/embed/eMxB9_N5ug8?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					<p class="title">Highlights of Panic in 2018. More videos and pictures on our <a onclick="setPage(5)">Media</a> page</p>
+					<br>
+					<iframe width="90%" height="200" src="https://www.youtube.com/embed/eMxB9_N5ug8?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 				</center>
 			</div>
 			<div class="col-md-4" id = "contentRight">
-				<a href="contact.html">
+				<a onclick="setPage(6)">
 					<h1 class="well">Contact Us</h1>
 				</a>
 				<div class="grayBox">
@@ -211,7 +215,8 @@
 						<a href="https://www.instagram.com/stonybrookultimate/" target="blank"><img src="icon/instagram-icon.png" class="topbar"></img></a>
 						<a href="https://www.flickr.com/photos/panicultimate/albums" target="blank"><img src="icon/flickr-icon.png" class="topbar"></img></a>
 					</center>
-        			<h2 class="redText">Ask to join the <a href="https://www.facebook.com/groups/panicultimate/" target="blank">Facebook group</a></h2>
+					<h2 class="redText">Ask to join the <a href="https://www.facebook.com/groups/panicultimate/" target="blank">Facebook Group</a></h2>
+					<h2 class="redText">Find out <a onclick="setPage(3)">How To Join</a> the team today!</h3>
 				</div>
 			</div>
 	
@@ -339,13 +344,42 @@
 <!--////////////////////////////////////////HowToJoin//////////////////////////////////////////////////////////////////-->
 <div class="myPages" style="display: none">
 	<div class="container">
-		<h1>How to join</h1>
 		<div class="row">
-			<div class="col-md-8">
-				
+			<div class="col-md-1">
 			</div>
+			<div class="col-md-5">
+				<h1 class="well">How To Join</h1>
+				<div class="grayBox">
+					<h3>Practice</h3>
+					<p>
+						Probably the easiest way to join is to simply show up to practice! Information about when and where practice
+						is held is located on our <a onclick="setPage(4)">Schedule</a> page. A campus map with bus routes is located
+						to the right (or down below if you're on mobile) to assist you in getting there!
+					</p>
+					<br>
+					<h3>Contact a Team Leader</h3>
+					<p>
+						If you have literally any questions or concerns, please don't hesitate to reach out to one of the team leaders,
+						all of whom are listed on the <a onclick="setPage(6)">Contact</a> page. We recommend using the team email: 
+						<a href="mailto:panicultimate@gmail.com" target="top" class="email">panicultimate@gmail.com</a> for the quickest 
+						response as all team leaders have access, but a personalized message to anyone listed is also welcome!
+					</p>
+					<br>
+					<h3>Team Updates</h3>
+					<p>
+						Most of our team updates will be made via our 
+						<a href="https://www.facebook.com/groups/panicultimate/" target="blank">Facebook Group</a> , so we recommend
+						joining that so that you don't miss out on any important announcements!
+					</p>
+				</div>
+			</div>
+			<div class="col-md-1">
+			</div>
+			<br>
 			<div class="col-md-4">
-				<iframe src="http://docs.google.com/gview?url=https://www.stonybrook.edu/commcms/transportation-and-parking/_pdf/BUSBROCHURENEW17-18.pdf&embedded=true" style="width:100%; height:600px;" frameborder="0" type="application/pdf"></iframe>
+				<object data="https://www.stonybrook.edu/commcms/transportation-and-parking/_pdf/BUSBROCHURENEW17-18.pdf" width="100%" height="500px" frameborder="0" type="application/pdf" style="float: right;"></object>
+			</div>
+			<div class="col-md-1">
 			</div>
 		</div>
 	</div>
@@ -533,6 +567,7 @@
 					<a href="https://www.facebook.com/StonyBrookUltimateFrisbee/" target="blank"><img src="icon/facebook-icon.png" class="img-rounded topbar"></img></a>
 					<a href="https://twitter.com/SBUultimate" target="blank"><img src="icon/twitter-icon.png" class="img-rounded topbar"></img></a>
 					<a href="https://www.instagram.com/stonybrookultimate/" target="blank"><img src="icon/instagram-icon.png" class="topbar"></img></a>
+					<a href="https://www.flickr.com/photos/panicultimate/albums" target="blank"><img src="icon/flickr-icon.png" class="topbar"></img></a>
 				</center>
 				<h2 class="redText">Ask to join the <a href="https://www.facebook.com/groups/panicultimate/" target="blank">Facebook group</a></h2>
 			</div>
@@ -552,6 +587,11 @@
 	window.onload=showSlides();
 	window.onload=showSlides2();
 	window.onload=showSlides3();
+
+	var pageIndex = JSON.parse(sessionStorage.getItem('currentPage'));
+	if(pageIndex!=null) {
+		window.onload=setPage(pageIndex);
+	}
 </script>
 </body>
 </html>

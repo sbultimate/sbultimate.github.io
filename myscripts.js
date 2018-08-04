@@ -1,6 +1,7 @@
 var slideIndex = 0;
 var slideIndex2 = 0;
 var slideIndex3 = 0;
+var pageIndex = 0;
 
 function setPage(page) {
   var i;
@@ -10,7 +11,9 @@ function setPage(page) {
     pages[i].style.display = "none"; 
   }
   pages[page].style.display = "block";
-
+  document.body.scrollTop = document.documentElement.scrollTop = 0;
+  pageIndex = page;
+  sessionStorage.setItem("currentPage", pageIndex);
 };
 
 function showSlides() {
@@ -49,19 +52,23 @@ function showSlides3() {
   setTimeout(showSlides3, 3000); // Change image every 2 seconds
 };
 
-// window.onmouseover = function(event) {
-//   if (!event.target.matches('.dropbtn')) {
 
-//     var dropdowns = document.getElementsByClassName("dropdown-content");
-//     var i;
-//     for (i = 0; i < dropdowns.length; i++) {
-//       var openDropdown = dropdowns[i];
-//       if (openDropdown.classList.contains('show')) {
-//         openDropdown.classList.remove('show');
-//       }
-//     }
-//   }
-// }
+
+/** dropdown functions */
+window.onmouseover = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    if(!event.target.matches('.droplink')){
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+    }
+  }
+};
 
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */

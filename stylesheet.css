@@ -18,6 +18,7 @@ body {
   width: 98vw;
 }
 
+
 h1 {
   margin: 0;
   color: #000000;
@@ -65,12 +66,8 @@ a:hover{
 	cursor: pointer;
 }
 
-a:visited {
-	color: purple;
-}
-
 iframe {
-	border-color: red;
+	border-color: #d12f2f;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -143,7 +140,7 @@ iframe {
  
 .nav a.active {
   color: #000;
-  background-color: #990000;
+  background-color: #d12f2f;
   cursor: default;
 }
 
@@ -166,8 +163,8 @@ button:focus {
 }
 
 #contentMiddle {
-	padding-left:75px;
-	padding-right:75px;
+	padding-left:80px;
+	padding-right:80px;
 }
 
 table {
@@ -194,7 +191,7 @@ td {
 }
 
 .well{
-	background-color: #990000;
+	background-color: #d12f2f;
   font-size: 1.8em;
   color: white;
   border-color: black;
@@ -207,11 +204,12 @@ td {
 }
 
 .redText {
-	color:#990000;
+	color:#d12f2f;
 }
 
 .grayBox{
-  background-color: rgb(179, 179, 179);
+  /* background-color: rgb(179, 179, 179); */
+  background:rgba(179, 179, 179, 0.85);
   border-style: double;
   border-width: 5px;
   border-color: rgb(0, 0, 0);
@@ -388,6 +386,14 @@ td {
   .nav button {
     display: inline-block;
     margin-right: -4px;
+  }
+
+  .dropdown-content {
+    min-width: 100px;
+  }
+
+  .dropdown-content a {
+    padding: 8px 12px;
   }
 
   .logo {
