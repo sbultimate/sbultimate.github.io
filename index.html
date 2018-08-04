@@ -3,111 +3,161 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="keywords" content="Ultimate, Ultimate Frisbee, Stony Brook, Stony Brooky Ultimate Frisbee, SBU">
+<meta name="keywords" content="Ultimate, Ultimate Frisbee, Stony Brook, Stony Brook Ultimate Frisbee, SBU">
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="myscripts.js"></script>
-
 <link rel="stylesheet" href="stylesheet.css">
 <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
 <title>Stony Brook Ultimate Frisbee</title>
 </head>
-<body onload = "showSlides()">
+<body>
 
 <div class="header">
-<div class="row">
-	<div class="col-sm-2">  
-	</div>
-	<div class="col-sm-3" style="background-color:#990000">
-		<a href="index.html">
-			<img src="images/header.jpg"  alt="Stony Brook Ultimate Frisbee" title="Stony Brook Ultimate" width="100%"></img>
-		</a>
-	</div>
-	<div class="col-sm-2">  
-	</div>
-	<div class="col-sm-3" id="header">
-		<h2>Follow Us</h2>
-		<center>
-			<a href="https://www.facebook.com/StonyBrookUltimateFrisbee/" target="blank"><img src="icon/facebook-icon.png" class="img-rounded topbar"></img></a>
-			<a href="https://twitter.com/SBUultimate" target="blank"><img src="icon/twitter-icon.png" class="img-rounded topbar"></img></a>
-			<a href="https://www.instagram.com/stonybrookultimate/" target="blank"><img src="icon/instagram-icon.png" class="topbar"></img></a>
-		</center>
-	</div>
-	<div class="col-sm-2">  
-	</div>
-</div>
-</div>
-<div class="row">
-	<div class="col-sm-12">
-		<div class="nav">
-			<ul>
-				<li class="home" onmouseup="setPage(0)"><a>Home</a></li>
-				<li class="about" onmouseup="setPage(1)"><a>About</a></li>
-				<li class="schedule" onmouseup="setPage(2)"><a>Schedule</a></li>
-				<li class="media" onmouseup="setPage(3)"><a>Media</a></li>
-				<li class="contact" onmouseup="setPage(4)"><a>Contact</a></li>
-			</ul>
+	<div class="row">
+		<div class="col-sm-2">  
+		</div>
+		<div class="col-sm-4">
+			<!-- <a href="index.html">
+				<img src="images/header.jpg"  alt="Stony Brook Ultimate Frisbee" title="Stony Brook Ultimate" width="100%"></img>
+			</a> -->
+			<h1 style="font-family: Oswald; color: white;">
+				STONY BROOK ULTIMATE
+			</h1>
+		</div>
+		<div class="col-sm-1">  
+		</div>
+		<div class="col-sm-3" id="header">
+			<h2>Follow Us</h2>
+			<center>
+				<a href="https://www.facebook.com/StonyBrookUltimateFrisbee/" target="blank"><img src="icon/facebook-icon.png" class="img-rounded topbar"></img></a>
+				<a href="https://twitter.com/SBUultimate" target="blank"><img src="icon/twitter-icon.png" class="img-rounded topbar"></img></a>
+				<a href="https://www.instagram.com/stonybrookultimate/" target="blank"><img src="icon/instagram-icon.png" class="topbar"></img></a>
+				<a href="https://www.flickr.com/photos/panicultimate/albums" target="blank"><img src="icon/flickr-icon.png" class="topbar"></img></a>
+			</center>
+		</div>
+		<div class="col-sm-2">  
 		</div>
 	</div>
 </div>
+<div class="nav">
+	<button class="home" onmouseup="setPage(0)"><a>Home</a></button>
+	<div class="dropdown">
+		<button onclick="setDropdown()" class="dropbtn">About</button>
+		<div id="myDropdown" class="dropdown-content">
+			<a onmouseup="setPage(1)">About Us</a>
+			<a onmouseup="setPage(2)">History</a>
+			<a onmouseup="setPage(3)">How To Join</a>
+		</div>
+	</div>
+	<button class="schedule" onmouseup="setPage(4)"><a>Schedule</a></button>
+	<button class="media" onmouseup="setPage(5)"><a>Media</a></button>
+	<button class="contact" onmouseup="setPage(6)"><a>Contact</a></button>
+</div>
+<br>
 <!--////////////////////////////////////////Home///////////////////////////////////////////////////////////////////////-->
 <div class="myPages">
 	<div class = "container">
-		<br>
-		<div class="row" id="content">
-			<div class="col-sm-1">
-			</div>
-			<div class="col-sm-2">
-				<img src="images/panic_logo.jpg" class="logo" alt="Panic Logo" title="Panic Ultimate" width="100%"></img>
-			</div>
-			<div class="col-sm-1">
-			</div>
-			<div class="col-sm-4">
+		<div class="row" style="border-style: solid; border-width: 2px; border-color: black; padding: 0px;">
+			<div class="col-sm-4" style="padding: 0px; border-style: solid; border-width: 2px; border-color: black;">
 			<!-- Slideshow container -->
-			<div class="slideshow-container">
-		
-				<!-- Full-width images with number and caption text -->
-				<div class="mySlides">
-					<div class="numbertext"></div>
-					<img src="images/slider/img1.jpg" style="width:100%">
-					<div class="text"></div>
-				</div>
-
-				<div class="mySlides">
-					<div class="numbertext"></div>
-					<img src="images/slider/img2.jpg" style="width:100%">
-					<div class="text"></div>
-				</div>
-
-				<div class="mySlides">
-					<div class="numbertext"></div>
-					<img src="images/slider/img3.jpg" style="width:100%">
-					<div class="text"></div>
-				</div>
-  
-				<div class="mySlides">
-					<div class="numbertext"></div>
-					<img src="images/slider/img4.jpg" style="width:100%">
-					<div class="text"></div>
+				<div class="slideshow-container side-container">
+					<!-- Full-width images with number and caption text -->
+					<div class="mySlides">
+						<div class="numbertext"></div>
+						<img src="images/slider/img1.jpg" style="width:100%">
+						<div class="text"></div>
+					</div>
+					<div class="mySlides">
+						<div class="numbertext"></div>
+						<img src="images/slider/img2.jpg" style="width:100%">
+						<div class="text"></div>
+					</div>
+					<div class="mySlides">
+						<div class="numbertext"></div>
+						<img src="images/slider/img3.jpg" style="width:100%">
+						<div class="text"></div>
+					</div>
+					<div class="mySlides">
+						<div class="numbertext"></div>
+						<img src="images/slider/img4.jpg" style="width:100%">
+						<div class="text"></div>
+					</div>
+					<div class="mySlides">
+						<div class="numbertext"></div>
+						<img src="images/slider/img5.jpg" style="width:100%">
+						<div class="text"></div>
+					</div>
 				</div>
 			</div>
+			<div class="col-sm-4" style="padding: 0px; border-style: solid; border-width: 2px; border-color: black;">
+			<!-- Slideshow container -->
+				<div class="slideshow-container">
+					<!-- Full-width images with number and caption text -->
+					<div class="mySlides2">
+						<div class="numbertext"></div>
+						<img src="images/slider2/img2.jpg" style="width:100%">
+						<div class="text"></div>
+					</div>
+					<div class="mySlides2">
+						<div class="numbertext"></div>
+						<img src="images/slider2/img3.jpg" style="width:100%">
+						<div class="text"></div>
+					</div>
+					<div class="mySlides2">
+						<div class="numbertext"></div>
+						<img src="images/slider2/img4.jpg" style="width:100%">
+						<div class="text"></div>
+					</div>
+					<div class="mySlides2">
+						<div class="numbertext"></div>
+						<img src="images/slider2/img5.jpg" style="width:100%">
+						<div class="text"></div>
+					</div>
+					<div class="mySlides2">
+						<div class="numbertext"></div>
+						<img src="images/slider2/img1.jpg" style="width:100%">
+						<div class="text"></div>
+					</div>
+				</div>
 			</div>
-			<div class="col-sm-1">
-			</div>
-			<div class="col-sm-2">
-			<img src="images/panic_logo.jpg" class="logo" alt="Panic Logo" title="Panic Ultimate" width="100%"></img>
-			</div>
-			<div class="col-sm-1">
+			<div class="col-sm-4" style="padding: 0px; border-style: solid; border-width: 2px; border-color: black;">
+				<!-- Slideshow container -->
+				<div class="slideshow-container side-container">
+					<!-- Full-width images with number and caption text -->
+					<div class="mySlides3">
+						<div class="numbertext"></div>
+						<img src="images/slider3/img3.jpg" style="width:100%">
+						<div class="text"></div>
+					</div>
+					<div class="mySlides3">
+						<div class="numbertext"></div>
+						<img src="images/slider3/img4.jpg" style="width:100%">
+						<div class="text"></div>
+					</div>
+					<div class="mySlides3">
+						<div class="numbertext"></div>
+						<img src="images/slider3/img5.jpg" style="width:100%">
+						<div class="text"></div>
+					</div>
+					<div class="mySlides3">
+						<div class="numbertext"></div>
+						<img src="images/slider3/img1.jpg" style="width:100%">
+						<div class="text"></div>
+					</div>
+					<div class="mySlides3">
+						<div class="numbertext"></div>
+						<img src="images/slider3/img2.jpg" style="width:100%">
+						<div class="text"></div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<br>
 		<br>
 		<div class="row" >
-			<div class="col-sm-4" id = "contentLeft">
+			<div class="col-md-4" id = "contentLeft">
 				<h1 class="well">Who We Are</h1>
-				<p>
+				<p class="grayBox">
 					We are Stony Brook University's 
 					official Ultimate Frisbee team. We have a men and women's 
 					team, and for several tournaments we combine to compete as a co-ed team. 
@@ -116,64 +166,61 @@
 					and attend 8-10 events per school year.
 				</p>
 			</div>
-			
-			<div class="col-sm-4" id = "contentMiddle">
+			<div class="col-md-4" id = "contentMiddle">
 				<h1 class="well">Who Can Join</h1>
-				<p>
+				<p class="grayBox">
 					Any SBU student is welcome to join, both undergrad and graduate students!
 					No prior experience is required! Our team is walk-on, and anyone who consistently 
 					shows up to practice will get at least one chance to go to a tournament or other
-                        Stony Brook Ultimate event!
-				</p>
-				<p>
-					All you have to do is visit our <a href="contact.html">Contact</a> page, and get in
-					touch with one of our team leaders, or even just show up to practice! Practice times 
-					are located on the <a href="schedule.html">Schedule</a> page.
+                    Stony Brook Ultimate event! <br/>
+					All you have to do is visit our <a onmouseup="setPage(6)">Contact</a> page, and get in
+					touch with one of our team leaders, or even just show up to practice! All information
+					about practices is located on the <a onmouseup="setPage(3)">How To Join</a> page.
 				</p>
 			</div>
-			<div class="col-sm-4" id = "contentRight">
+			<div class="col-md-4" id = "contentRight">
 				<h1 class="well">News</h1>
 				<a class="twitter-timeline" data-height = "300" href="https://twitter.com/SBUultimate?ref_src=twsrc%5Etfw">Tweets by SBUultimate</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 			</div>
 		</div>
 		<br>
 		<div class="row">
-			<div class="col-sm-4" id = "contentLeft">
+			<div class="col-md-4" id = "contentLeft">
+				<h1 class="well">Updates</h1>
+			</div>
+			<div class="col-md-4" id = "contentMiddle">
 				<h1 class="well">Highlights</h1>
 				<center>
 					<iframe width="90%" height="300" src="https://www.youtube.com/embed/eMxB9_N5ug8?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 				</center>
 			</div>
-			<div class="col-sm-4" id = "contentMiddle">
-				<h1 class="well">News</h1>
-		
-			</div>
-			<div class="col-sm-4" id = "contentRight">
+			<div class="col-md-4" id = "contentRight">
 				<a href="contact.html">
 					<h1 class="well">Contact Us</h1>
 				</a>
-				<h2 class="redText">Email</h2>
-				<p>
-					<a href="mailto:panicultimate@gmail.com" target="top" class="email">panicultimate@gmail.com</a>
-				</p>
+				<div class="grayBox">
+					<h2 class="redText">Email</h2>
+					<p>
+						<a href="mailto:panicultimate@gmail.com" target="top" class="email">panicultimate@gmail.com</a>
+					</p>
 			
-				<h2 class="redText">Follow us on social media</h2>
-				<center>
-					<a href="https://www.facebook.com/StonyBrookUltimateFrisbee/" target="blank"><img src="icon/facebook-icon.png" class="img-rounded topbar"></img></a>
-					<a href="https://twitter.com/SBUultimate" target="blank"><img src="icon/twitter-icon.png" class="img-rounded topbar"></img></a>
-					<a href="https://www.instagram.com/stonybrookultimate/" target="blank"><img src="icon/instagram-icon.png" class="topbar"></img></a>
-				</center>
-        		<h2 class="redText">Ask to join the <a href="https://www.facebook.com/groups/panicultimate/" target="blank">Facebook group</a></h2>
-		
-		</div>
+					<h2 class="redText">Follow us on social media</h2>
+					<center>
+						<a href="https://www.facebook.com/StonyBrookUltimateFrisbee/" target="blank"><img src="icon/facebook-icon.png" class="img-rounded topbar"></img></a>
+						<a href="https://twitter.com/SBUultimate" target="blank"><img src="icon/twitter-icon.png" class="img-rounded topbar"></img></a>
+						<a href="https://www.instagram.com/stonybrookultimate/" target="blank"><img src="icon/instagram-icon.png" class="topbar"></img></a>
+						<a href="https://www.flickr.com/photos/panicultimate/albums" target="blank"><img src="icon/flickr-icon.png" class="topbar"></img></a>
+					</center>
+        			<h2 class="redText">Ask to join the <a href="https://www.facebook.com/groups/panicultimate/" target="blank">Facebook group</a></h2>
+				</div>
+			</div>
 	
 		</div>
 	</div>
 </div>
 <!--////////////////////////////////////////About//////////////////////////////////////////////////////////////////////-->
-<div class="myPages" style="display: none;">
+<div class="myPages" style="display: none">
 	<div class="container">
-		<br>
 		<div class="row">
 		<div class="col-sm-12">
         <h1>About Stony Brook Ultimate</h1>
@@ -185,7 +232,7 @@
 		</div>
 		<div class="col-sm-8">
 		<h3>Who Are We?</h3>
-		<p>
+		<p class="grayBox">
 			In addition to being the most fun club on campus, we are a collection of people 
 			from all athletic or non-athletic backgrounds who love playing ultimate frisbee! 
 			Many of us joined the club having never even played before, so absolutely everyone 
@@ -204,12 +251,10 @@
 		</div>
 		<div class="col-sm-8">
 		<h3>Who Can Join</h3>
-		<p>
+		<p class="grayBox">
 			Absolutely any stony brook student, undergraduate or graduate(or even faculty) is more 
 			than welcome here! We require absolutely no experience to join and will teach you 
-			everything you need to know!
-		</p>
-		<p>
+			everything you need to know!<br/>
 			If you do have experience playing ultimate, we do have a FILTHY A team with experienced 
 			coaches and player who would love to help bring your game to the next level.
 		</p>
@@ -223,7 +268,7 @@
 		</div>
 		<div class="col-sm-8">
 		<h3>About Panic</h3>
-		<p>
+		<p class="grayBox">
 			Panic is the name of our mens A and B teams, as well as our co-ed team. All three teams 
 			compete at both local and away tournaments throughout the fall and the spring semesters. 
 			Our Men’s A team also competes at USA Ultimate sanctioned tournaments. Our Mens A team's 
@@ -239,7 +284,7 @@
 		</div>
 		<div class="col-sm-8">
 		<h3>About Smash</h3>
-		<p>
+		<p class="grayBox">
 			Smash is the name of our BADASS womens team. We are full of strong women who want to see the 
 			sport of ultimate grow for females! We go to local and away tournaments throughout both the 
 			fall and spring semesters. We also have our very own coach, Ken Cabot, as well as a wonderful 
@@ -255,7 +300,7 @@
 		</div>
 		<div class="col-sm-8">
 		<h3>Practices</h3>
-		<p>
+		<p class="grayBox">
 			Practice times are located on our schedule page. We hold practices 3 times a week in the evening 
 			during fall semester at south P fields, which are a quick walk or an even quicker bus ride on the 
 			express loop away. During the spring semester due to frigid temperatures we hold practice indoors 
@@ -273,7 +318,7 @@
 		</div>
 		<div class="col-sm-8">
 		<h3>Tournaments</h3>
-		<p>
+		<p class="grayBox">
 			We usually go to about 4 tournaments per semester, mostly in the tri-state/New England area. During 
 			the fall we play at both Men's/Women's and mixed tournaments, and during the Spring we primarily 
 			play Men's/Women's. During spring break we head down to Myrtle beach with two mixed teams for the 
@@ -285,10 +330,29 @@
 		</div>
 	</div>
 </div>
-<!--////////////////////////////////////////Schedule///////////////////////////////////////////////////////////////////-->
-<div class="myPages" style="display: none;">
+<!--////////////////////////////////////////History////////////////////////////////////////////////////////////////////-->
+<div class="myPages" style="display: none">
 	<div class="container">
-		<br>
+		<h1>History</h1>
+	</div>
+</div>
+<!--////////////////////////////////////////HowToJoin//////////////////////////////////////////////////////////////////-->
+<div class="myPages" style="display: none">
+	<div class="container">
+		<h1>How to join</h1>
+		<div class="row">
+			<div class="col-md-8">
+				
+			</div>
+			<div class="col-md-4">
+				<iframe src="http://docs.google.com/gview?url=https://www.stonybrook.edu/commcms/transportation-and-parking/_pdf/BUSBROCHURENEW17-18.pdf&embedded=true" style="width:100%; height:600px;" frameborder="0" type="application/pdf"></iframe>
+			</div>
+		</div>
+	</div>
+</div>
+<!--////////////////////////////////////////Schedule///////////////////////////////////////////////////////////////////-->
+<div class="myPages" style="display: none">
+	<div class="container">
 		<div class="row">
 			<div class="col-sm-3">
 				<h1>Practice Times</h1>
@@ -323,30 +387,111 @@
 				<br>
 			</div>
 			<div class="col-sm-6">
-				<iframe src="https://calendar.google.com/calendar/embed?src=stonybrook.edu_10p78ps9uji9v7kertf4fddqp4%40group.calendar.google.com&ctz=America/New_York" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+				<iframe src="https://calendar.google.com/calendar/embed?src=panicultimate%40gmail.com&ctz=America%2FNew_York" style="border-width: 2px; border-color: black; " width="100%" height="600" frameborder="0" scrolling="no"></iframe>
 			</div>
 		</div>
 	</div>
 </div>
 <!--////////////////////////////////////////Media//////////////////////////////////////////////////////////////////////-->
-<div class="myPages" style="display: none;">
+<div class="myPages" style="display: none">
 	<div class="container">
-		<br>
 		<div class="row">
-		<div class="col-sm-6">
-		<h1>Photos</h1>
-		</div>
-		<div class="col-sm-6">
-		<h1>Videos</h1>
-		</div>
+			<div class="col-sm-6">
+				<h1>Photos</h1>
+				<br>
+				<div class="row">
+					<div class="col-md-6">
+						<center>
+							<p class="title">Wildwood 2018</p>
+							<a href="https://www.flickr.com/photos/panicultimate/albums/72157699285610044" target="blank">
+								<img src="images/media/wildwood.jpg"></img>
+							</a>
+						</center>
+					</div>
+					<div class="col-md-6">
+						<center>
+							<p class="title">Regionals 2018</p>
+							<a href="https://www.flickr.com/photos/panicultimate/albums/72157699296714804" target="blank">
+								<img src="images/media/regionals.jpg"></img>
+							</a>
+						</center>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-md-6">
+						<center>
+							<p class="title">Sectionals 2018</p>
+							<a href="https://www.flickr.com/photos/panicultimate/albums/72157671806702448" target="blank">
+								<img src="images/media/sectionals.jpg"></img>
+							</a>
+						</center>
+					</div>
+					<div class="col-md-6">
+						<center>
+							<p class="title">High Tide 2018</p>
+							<a href="https://www.flickr.com/photos/panicultimate/albums/72157671806918618" target="blank">
+								<img src="images/media/high_tide.jpg"></img>
+							</a>
+						</center>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<h1>Videos</h1>
+				<br>
+				<div class="row">
+					<div class="col-md-6">
+						<center>
+							<p class="title">Panic 2018 Highlights</p>
+							<iframe width="90%" height="200" src="https://www.youtube.com/embed/eMxB9_N5ug8?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						</center>
+					</div>
+					<div class="col-md-6">
+						<center>
+							<p class="title">Smash vs Devyl</p>
+							<iframe width="90%" height="200" src="https://www.youtube.com/embed/_LEC_Z4pjKg?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						</center>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-md-6">
+						<center>
+							<p class="title">High Tide 2018 Championship</p>
+							<iframe width="90%" height="200" src="https://www.youtube.com/embed/H1DRuBtAN44?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						</center>
+					</div>
+					<div class="col-md-6">
+						<center>
+							<p class="title">Panic vs College of NJ</p>
+							<iframe width="90%" height="200" src="https://www.youtube.com/embed/7A7R6o00epc?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						</center>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-md-6">
+						<center>
+							<p class="title">Stony vs New Paltz at Vassar</p>
+							<iframe width="90%" height="200" src="https://www.youtube.com/embed/lwAf0OQ8cfs?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						</center>
+					</div>
+					<div class="col-md-6">
+						<center>
+							<p class="title">Stony vs Pandas</p>
+							<iframe width="90%" height="200" src="https://www.youtube.com/embed/LNrGAwpJAwI?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						</center>
+					</div>
+				</div>
+			</div>
 		</div>
 		<br>
 	</div>
 </div>
 <!--////////////////////////////////////////Contact////////////////////////////////////////////////////////////////////-->
-<div class="myPages" style="display: none;">
+<div class="myPages" style="display: none">
 	<div class="container">
-		<br>
 		<center><h1>JOIN US! NEW PLAYERS ALWAYS WELCOME!</h1></center>
 		<br>
 		<div class="row">
@@ -355,13 +500,13 @@
 			<div class="col-sm-6">
 				<h1 class="well">Contact Info</h1>
 			</div>
-				<div class="col-sm-3">
+			<div class="col-sm-3">
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-sm-3">
 			</div>
-			<div class="col-sm-6">
+			<div class="col-sm-6 grayBox">
 				<h2 class="redText">Email</h2>
 				<p><a href="mailto:panicultimate@gmail.com" target="top" class="email">panicultimate@gmail.com</a></p>
 				<h2 class="redText">Women's Captains</h2>
@@ -400,5 +545,13 @@
 
 <br>
 <br>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="myscripts.js"></script>
+<script>
+	window.onload=showSlides();
+	window.onload=showSlides2();
+	window.onload=showSlides3();
+</script>
 </body>
 </html>
