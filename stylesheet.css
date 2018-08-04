@@ -4,11 +4,13 @@ html, body {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden; 
+  font-family: Oswald;
 }
 
 body {
-  background-image: url(images/bg2.jpg);
+  background: #ffffff url(images/background.jpg) no-repeat;
   background-size: 100vw;
+  background-position-y: 60px;
 	color: #000000;
 }
 
@@ -18,19 +20,21 @@ body {
 
 h1 {
   margin: 0;
-  color: #d12f2f;
+  color: #000000;
   text-align: center;
   font-weight: bold;
+  font-family: Oswald;
 }
 
 h2 {
 	color: #ffffff;
   text-align: center;
-	vertical-align: top;
+  vertical-align: top;
+  font-family: Oswald;
 }
 
 h3 {
-	color: #d12f2f;
+	color: #000000;
 	font-weight: bold;
 }
 
@@ -39,6 +43,10 @@ p {
   font-size: 1.2em;
 	text-align: center;
 	margin:0;
+}
+
+p.title {
+  font-weight: bold;
 }
 
 ul {
@@ -190,6 +198,7 @@ td {
   font-size: 1.8em;
   color: white;
   border-color: black;
+  border-width: 1.5px;
 }
 
 .topbar {
@@ -202,7 +211,7 @@ td {
 }
 
 .grayBox{
-  background-color: rgb(143, 140, 140);
+  background-color: rgb(179, 179, 179);
   border-style: double;
   border-width: 5px;
   border-color: rgb(0, 0, 0);
@@ -367,7 +376,7 @@ td {
 	}
 	
 
-  .nav li {
+  .nav button {
     width: 4.5em;
     border-bottom: none;
     height: 3.3em;
@@ -376,12 +385,16 @@ td {
   }
 
   /* Option 1 - Display Inline */
-  .nav li {
+  .nav button {
     display: inline-block;
     margin-right: -4px;
   }
 
   .logo {
+    display: none;
+  }
+
+  .side-container {
     display: none;
   }
 }
