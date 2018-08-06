@@ -8,7 +8,7 @@ html, body {
 }
 
 body {
-  background: #ffffff url(images/background.jpg) no-repeat;
+  background: #ffffff url(../images/background.jpg) no-repeat;
   background-size: 100vw;
   background-position-y: 60px;
 	color: #000000;
@@ -48,6 +48,7 @@ p {
 
 p.title {
   font-weight: bold;
+  font-size: 1.3em;
 }
 
 ul {
