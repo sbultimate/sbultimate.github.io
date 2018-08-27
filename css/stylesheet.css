@@ -90,6 +90,7 @@ iframe {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  font-size: 1.2em;
 }
 
 /* Links inside the dropdown */
@@ -330,16 +331,16 @@ td {
 /*********************************************************/
 
 @media screen and (min-width: 750px) {
-  .nav li {
+  .nav button {
     width: 150px;
     border-bottom: none;
     height: 50px;
     line-height: 50px;
-    font-size: 1.6em;
+    font-size: 1.3em;
   }
 
   /* Option 1 - Display Inline */
-  .nav li {
+  .nav button {
     display: inline-block;
     margin-right: -4px;
   }
@@ -376,9 +377,6 @@ td {
   .topbar{
     width: 2em;
   }
-  .email{
-    font-size:.8em;
-  }
 	.well{
 		font-size: 1.3em;
 	}
@@ -400,6 +398,7 @@ td {
 
   .dropdown-content {
     min-width: 100px;
+    font-size: 1em;
   }
 
   .dropdown-content a {
