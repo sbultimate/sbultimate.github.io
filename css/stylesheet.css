@@ -94,7 +94,7 @@ iframe {
 
 /* Links inside the dropdown */
 .dropdown-content a {
-  color: black !important;
+  color: white !important;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -102,8 +102,7 @@ iframe {
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover { 
-  background-color: #c02929;
-  color: white !important;
+  color: black !important;
 }
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
@@ -213,15 +212,17 @@ td {
 }
 
 .redText {
-	color:#d12f2f;
+  color:#d12f2f;
+  font-weight: 550;
 }
 
 .grayBox{
   /* background-color: rgb(179, 179, 179); */
-  background:rgba(179, 179, 179, 0.85);
+  background:rgba(179, 179, 179, 0.75);
   border-style: double;
   border-width: 5px;
   border-color: rgb(0, 0, 0);
+  padding: 5px;
 }
 
 /* .logo {
