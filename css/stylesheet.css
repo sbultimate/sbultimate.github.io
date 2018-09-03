@@ -157,21 +157,21 @@ button:focus {
   outline:0;
 }
  
-#content {
-	padding:10px;
+.content {
+	/* padding:0px; */
 }
 
-#contentLeft {
+.contentLeft {
 	padding-left:125px;
 	padding-right:50px;
 }
 
-#contentRight {
+.contentRight {
 	padding-left:50px;
 	padding-right:125px;
 }
 
-#contentMiddle {
+.contentMiddle {
 	padding-left:80px;
 	padding-right:80px;
 }
@@ -241,6 +241,13 @@ td {
   max-width: 1000px;
   position: relative;
   margin: auto;
+}
+
+.slideshow-border {
+  padding: 0px; 
+  border-style: solid; 
+  border-width: 2px; 
+  border-color: black;
 }
 
 /* Hide the images by default */
@@ -412,24 +419,34 @@ td {
   .side-container {
     display: none;
   }
+
+  .slideshow-border {
+    padding: 0px; 
+    border-style: none; 
+  }
 }
 
 @media only screen and (max-width: 70em) {
-  #contentLeft {
+  .contentLeft {
 		padding-left:0px;
     padding-right:0px;
     padding: 2.5em;
 	}
 
-	#contentRight {
+	.contentRight {
 		padding-left:0px;
     padding-right:0px;
     padding: 2.5em;
 	}
 
-	#contentMiddle {
+	.contentMiddle {
 		padding-left:0px;
     padding-right:0px;
     padding: 2.5em;
-	}
+  }
+  
+  .content {
+    padding-top: 1.25em;
+    padding-bottom: 1.25em;
+  }
 }
